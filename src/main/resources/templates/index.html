@@ -20,23 +20,6 @@
 
 
 <main role="main">
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">SSR 免费账号共享</h1>
-            <p class="lead text-muted">
-                本项目不具备代理及账号管理能力。只负责汇集目标站点信息，便于大家查看、订阅。<br/>
-                账号来之不易，请支持源站点。
-                <a href="https://github.com/zc-zh-001/ShadowSocks-Share" target="_blank">
-                    查看项目
-                </a>
-            </p>
-            <!--<p>
-                <a href="#" class="btn btn-primary my-2">查看项目 &raquo;</a>
-                <a href="#" class="btn btn-secondary my-2">使用帮助 &raquo;</a>
-            </p>-->
-        </div>
-    </section>
-
     <div class="container">
         <!--<div class="row">
             <th:block th:each="ssr,iterStat : ${ssrList}">
@@ -70,45 +53,12 @@
                                           th:classappend="${ssrd.valid ? 'badge badge-success' : 'badge badge-danger'}">
                                     </span>
                                 </dd>
-                                <dt class="col-md-3 col-sm-4">地址</dt>
-                                <dd class="col-md-9 col-sm-8">
-                                    <th:block th:text="${ssrd.server}"/>
-                                </dd>
-                                <dt class="col-md-3 col-sm-4">端口</dt>
-                                <dd class="col-md-9 col-sm-8">
-                                    <th:block th:text="${ssrd.server_port}"/>
-                                </dd>
-                                <dt class="col-md-3 col-sm-4">密码</dt>
-                                <dd class="col-md-9 col-sm-8">
-                                    <th:block th:text="${ssrd.password}"/>
-                                </dd>
-                                <dt class="col-md-3 col-sm-4">加密</dt>
-                                <dd class="col-md-9 col-sm-8">
-                                    <th:block th:text="${ssrd.method}"/>
-                                </dd>
-                                <dt class="col-md-3 col-sm-4">协议</dt>
-                                <dd class="col-md-9 col-sm-8">
-                                    <th:block th:text="${ssrd.protocol}"/>
-                                </dd>
-                                <dt class="col-md-3 col-sm-4">混淆</dt>
-                                <dd class="col-md-9 col-sm-8">
-                                    <th:block th:text="${ssrd.obfs}"/>
-                                </dd>
                             </dl>
                             <div class="d-flex justify-content-between align-items-center">
-                                <button type="button" class="btn btn-sm btn-secondary" th:attr="data-id=${ssrd.id},data-title=${ssrd.title},data-value=${ssrd.link}"
-                                        onclick="showImg(this)">
-                                    <i class="fa fa-qrcode" aria-hidden="true"></i> &nbsp; 二维码 &nbsp; &raquo;
-                                </button>
                                 <button type="button" class="btn btn-sm btn-secondary"
                                         th:attr="data-title=${ssrd.title},data-value=${ssrd.link}"
                                         onclick="showLink(this)">
                                     <i class="fa fa-link" aria-hidden="true"></i> &nbsp; 连接 &nbsp; &raquo;
-                                </button>
-                                <button type="button" class="btn btn-sm btn-secondary"
-                                        th:attr="data-title=${ssrd.title},data-value=${ssrd.jsonStr}"
-                                        onclick="showLink(this)">
-                                    <i class="fa fa-code" aria-hidden="true"></i> &nbsp; JSON &nbsp; &raquo;
                                 </button>
                             </div>
                         </div>
@@ -122,14 +72,6 @@
 </main>
 
 <hr/>
-<footer class="footer">
-    <div class="container">
-        <p class="float-right">
-            <a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>&nbsp;返回顶部</a>
-        </p>
-        <p class="text-muted">&copy; 2017 xxx, Inc. 免费、开源的 SSR 账号爬虫</p>
-    </div>
-</footer>
 
 
 <!-- 二维码图片 -->
