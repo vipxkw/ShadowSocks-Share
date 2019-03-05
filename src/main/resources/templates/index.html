@@ -74,11 +74,11 @@ if(!x && document.getElementById) x=document.getElementById(n); return x;
 //--> 
 </SCRIPT> 
 <FORM action="" method=post name=form1> 
-<TEXTAREA cols=20 name=js_1 rows=1.5 wrap=VIRTUAL>${ssrd.link}</textarea> 
+<TEXTAREA cols=20 name=js_1 rows=1.5 wrap=VIRTUAL>th:attr="data-value=${ssrd.link}"</textarea> 
 <INPUT name=Button onclick="JM_cc('js_1')" type=button value=复制>
 </form> 
                                 <button type="button" class="btn btn-sm btn-secondary"
-                                        th:attr="data-title=${ssrd.title},data-value=${ssrd.link}"
+                                        th:attr="data-value=${ssrd.link}"
                                         onclick="showLink(this)">
                                     <i class="fa fa-link" aria-hidden="true"></i> &nbsp; 连接 &nbsp; &raquo;
                                 </button>
